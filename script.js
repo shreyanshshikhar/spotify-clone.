@@ -6,26 +6,26 @@ let myProgressBar = document.getElementById('myProgressBar');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songs = [{
         songName: "town",
-        filePath: "songs/song1.mp3",
+        filePath: "song1.mp3",
         coverPath: "https://i.pinimg.com/736x/d5/05/ee/d505ee867802323770ec4b02a9134b25.jpg"
     },
     {
         songName: "wohoo",
-        filePath: "songs/song2.mp3",
+        filePath: "song2.mp3",
         coverPath: "https://images.template.net/90560/music-album-cover-template-05xmk.jpeg"
     },
     {
         songName: "Beat",
-        filePath: "songs/song3.mp3",
+        filePath: "song3.mp3",
         coverPath: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CizKs6VxFXB6SZpF4dv27Gvk3RSqdyl4NoN99MUzg9kNtYeEnXKgYWf3A3hOUHY8XRU&usqp=CAU"
     },
     {
         songName: "trip",
-        filePath: "songs/song4.mp3",
+        filePath: "song4.mp3",
         coverPath: "https://marketplace.canva.com/EAFWz37wwl0/1/0/1600w/canva-black-minimalist-photocentric-rose-on-fire-hip-hop-album-cover-laJL2q01ZUU.jpg"
     }, {
         songName: "beap",
-        filePath: "songs/song5.mp3",
+        filePath: "song5.mp3",
         coverPath: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMlo1SEctH8EtnneE5uAPCOsw_ZFmfDnLB6_7RwyhkUThz0t5ms-D5VEajd_n5imS1f2g&usqp=CAU"
     },
     // Add more song objects as needed
