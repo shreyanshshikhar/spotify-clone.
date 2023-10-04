@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Dela+Gothic+One&display=swap');
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    overflow-x: hidden;
+}
+
+nav {
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigations {
+    display: flex;
+    margin-right: 5%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: aquamarine;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 200px;
+}
+
+.container {
+    min-height: 67vh;
+    background-color: black;
+    color: white;
+    font-family: 'Dela Gothic One', cursive;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background: url(https://images2.alphacoders.com/109/thumb-1920-1093974.jpg);
+    background-position: center;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.bottom {
+    position: sticky;
+    background-color: black;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#myProgressBar {
+    width: 90vw;
+    cursor: pointer;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.songItemContainer {
+    margin-top: 30px;
+}
+
+.songItem img {
+    width: 50px;
+    border-radius: 30px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    align-items: center;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: small;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+/* Media query for screens with a width of 400px or smaller */
+
+@media screen and (max-width: 400px) {
+    body {
+        /* Adjust the body styles for screens of 400px or smaller */
+        font-size: 14px;
+        /* You can adjust the font size */
+    }
+    /* You can add more styles here for elements that need to be adjusted for small screens */
+    .container {
+        padding: 15px;
+        /* Reduce container padding for smaller screens */
+    }
+    .songItem img {
+        max-width: 40px;
+        /* Decrease the size of song item images */
+    }
+    .songInfo {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: smaller;
+        left: 3vw;
+    }
+}
