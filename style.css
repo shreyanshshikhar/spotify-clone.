@@ -126,6 +126,103 @@ nav ul li {
 }
 
 
+/* Add hover effect to navigation links */
+
+.navigations li:hover {
+    color: #1db954;
+    transition: color 0.3s ease;
+}
+
+
+/* Style the song list items on hover */
+
+.songItem:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+
+/* Style the play button on hover */
+
+.songItemPlay:hover {
+    color: #ff3f5e;
+    transition: color 0.3s ease;
+}
+
+
+/* Style the progress bar */
+
+#myProgressBar {
+    height: 4px;
+    background-color: #535353;
+    border: none;
+    outline: none;
+}
+
+
+/* Style the progress bar thumb */
+
+#myProgressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #1db954;
+    border: 2px solid #535353;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Style the previous and next icons on hover */
+
+#previous:hover,
+#next:hover {
+    color: #ff3f5e;
+    transition: color 0.3s ease;
+}
+
+
+/* Style the song info container */
+
+.songInfo {
+    flex-grow: 1;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+
+/* Style the song name */
+
+#masterSongName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1db954;
+}
+
+
+/* Style the bottom player background image */
+
+.bottom {
+    background-image: url('https://your-image-url.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Additional styles for responsiveness */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .navigations li {
+        margin-right: 10px;
+    }
+}
+
+
 /* Media query for screens with a width of 400px or smaller */
 
 @media screen and (max-width: 400px) {
